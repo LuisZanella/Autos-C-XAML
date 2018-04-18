@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Agencia.Vista;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,22 @@ namespace Agencia
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void rdbAUsado_Checked(object sender, RoutedEventArgs e)
+        {
+            AutoWindow _WAW = new AutoWindow();
+            _WAW.Show();
+            _WAW.lblTitulo.Content = "Autos Usados";
+            _WAW.lblVariable.Content = "Kilometraje: ";
+        }
+
+        private void rdbANuevo_Checked(object sender, RoutedEventArgs e)
+        {
+            AutoWindow _WAW = new AutoWindow();
+            _WAW.Show();
+            _WAW.lblTitulo.Content = "Autos Nuevos";
+            _WAW.txtVariable.Visibility = System.Windows.Visibility.Hidden;
         }
     }
 }

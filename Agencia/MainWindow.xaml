@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Canvas HorizontalAlignment="Left" Height="319" VerticalAlignment="Top" Width="517">
+            <RadioButton x:Name="rdbANuevo" GroupName="TipoAuto" Content="Autos Nuevos" Canvas.Left="187" Canvas.Top="77" Checked="rdbANuevo_Checked"/>
+            <RadioButton x:Name="rdbAUsado" GroupName="TipoAuto" Content="Autos Usados" Canvas.Left="187" Canvas.Top="97" Checked="rdbAUsado_Checked"/>
+        </Canvas>
+        <Label Content="Agencia de Autos Bara Bara" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200,10,0,0" FontWeight="Bold"/>
+
     </Grid>
 </Window>
